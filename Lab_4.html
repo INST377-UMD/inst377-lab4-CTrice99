@@ -1,0 +1,89 @@
+
+<html>
+    
+    <head>
+        <title>INST377 - Lab 4 </title>
+        <link rel = "stylesheet" href="C:\Users\Christina\INST_377\Lab_4.css">
+        
+    </head>
+
+    <body>
+        <h1 id = "page-heading">INST377 - Lab 4 </h1>
+
+                 <!-- Main Box Area -->
+                 <div class="name-box">
+                    <label for = "name">Name: </label>
+                    <input type = "text" id = "name" name = "name" class=" text-box"required placeholder>
+                    <button onclick="showAlert()">Alert Me!</button>
+                    
+                </div>
+                <script>
+                    function showAlert() {
+                        // Get the value from the input field
+                        var name = document.getElementById('name').value;
+                        
+                        // Create the alert message
+                        alert('Hello ' + name + '!');
+                    }
+                </script>
+
+                <div class="change-color">
+                    <button onclick="changeColor()">Change Color</button>
+                    
+                </div>
+                
+                <script>
+                    let isLightCyan = true;
+
+                    function changeColor(){
+                        if(isLightCyan){
+                            document.body.style.backgroundColor = 'pink'; 
+                        }else{
+                            document.body.style.backgroundColor = 'LightCyan';
+                        
+                        }
+                        isLightCyan= !isLightCyan;
+
+
+                    }
+
+                </script>
+                <div class="test-box">
+
+                    <form id = "textForm">
+                        <label for = "text-tester">Test Tester: </label>
+                        <input type = "text" id = "text-tester" text-tester ="text-tester"class=" text-box"required placeholder>
+                        <button type = "button" onclick="validateText()">Validate Text</button>
+                    </form>
+                </div>
+
+                <script type="text/javascript">
+                    function validateText() {
+                        var text = document.getElementById('text-tester').value;
+                        var validation = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+
+                        if (validation.test(text)) {
+                            alert('There is a special character');
+                        } else {
+                            alert('No special characters');
+                        }
+                    }
+                </script>
+
+                <div class="add-text-box">
+                    <button onclick="addText()">Add Text </button>
+                    
+                </div>
+                <script>
+                    function addText(){
+                        var heading = document.getElementById('page-heading');
+                        heading.innerHTML += ' - Add Text';
+                    }
+                </script>
+    </body>
+
+
+
+
+
+</html>

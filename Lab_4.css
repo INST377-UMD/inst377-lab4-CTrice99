@@ -1,0 +1,64 @@
+
+
+body {
+    background-color:lightcyan;
+}
+h1{
+    font-size: 60;
+    font-weight: 900;
+}
+
+.name-box{
+    background-color: rgb(67, 7, 99);
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    margin: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    width:300px;
+    border-radius: 15px;
+}
+.test-box{
+    background-color: rgb(67, 7, 99);
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    margin: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    width:350px;
+    border-radius: 15px;
+}
+
+.change-color{
+    
+    background-color: rgb(67, 7, 99);
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    width:300px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: -95px;
+    left: 450px;
+    
+    
+}
+
+.add-text-box{
+    background-color: rgb(67, 7, 99);
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    width:300px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: -95px;
+    left: 450px;
+}
+
